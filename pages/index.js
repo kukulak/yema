@@ -1,22 +1,43 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+// import logo from '../public/yemaLogo.svg'
+
+import Card from '../components/card/card.component'
+
+
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  useQuery,
+  gql
+} from "@apollo/client";
+
 
 export default function Home() {
   return (
     <div className={styles.container}>
+    <Card />
+        
+    {/* </Card> */}
+
+
       <Head>
-        <title>Create Next App</title>
+        <title>spaceX for YEMA</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        spaceX
+        
+        {/* <a href="https://nextjs.org">Next.js!</a> */}
         </h1>
-
+        <p>for</p>
+          <img src= '/yemaLogo.svg' width="200"></img>
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Past Launches{' '}
+          {/* <code className={styles.code}>pages/index.js</code> */}
         </p>
 
         <div className={styles.grid}>
