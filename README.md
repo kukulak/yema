@@ -18,7 +18,8 @@ Crea una aplicación en react que contenga lo siguiente:
 3. Página de "Acerca de"
    - [x] Información acerca de la compañía, al menos nombre, descripción y links relevantes (Debes obtener estos datos de GraphQL de "company")
 
-4. [x] Navegación entre ambas páginas. Ambas deben de contener links para navegar.
+4. Navegación entre ambas páginas.
+   - [x] Ambas deben de contener links para navegar.
 
 5. Reutilizar componentes / Buena estructura
 
