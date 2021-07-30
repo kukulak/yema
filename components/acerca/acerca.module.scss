@@ -42,6 +42,12 @@
     padding: 60px 0;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px;
+    grid-row-end: none;
+    div{
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
 }
 
 .footerB{
@@ -63,8 +69,13 @@
 }
 
 .btns{
+    a{
+        display: grid;
+        justify-items: center;
+        gap: 10px;
+    }
     img{
-        width: 50px;
+        width: 30px;
     }
 }
 

@@ -6,7 +6,7 @@ import styles from './card.module.scss';
 export default function CardFecha({date}) {
     // const event = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
     const event = new Date(date);
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true };
     // console.log(event.toLocaleDateString('es-ES', options));
     
     return (

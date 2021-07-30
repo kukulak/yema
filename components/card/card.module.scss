@@ -80,10 +80,6 @@
     }
 }
 
-.black{
-    background-color: none; 
-    color: rgb(44, 44, 44);
-}
 
 .btn{
     transform: translateZ(20px);
@@ -131,31 +127,96 @@
     text-align: right;
 }
 
-.black{
-    color: rgb(44, 44, 44) !important;
-}
+
+
+
+
 
 .red{
     color: rgb(160, 0, 0) !important;
 }
 
 .more_button{
-    grid-column-end: -1;
+    justify-self: end;
     align-self: baseline;
     background: black;
-    color: white;
+    color: rgb(124, 124, 124);
     /* grid-row-end: -1; */
-    width: 62%;
-    height: 70px;
+    width: 90%;
+    height: 56px;
     font-weight: 100;
     display: grid;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 0.7;
     border-radius: 5px;
     transition: 1s;
 
     &:hover{
         background-color: grey;
-        border-radius: 15px;
+        border-radius: 10px;
+        transform: scale(1.1);
+        z-index: 100;
+        color: rgb(71, 71, 71);
     }
+}
+
+.less_button{
+    justify-self: start;
+    align-self: baseline;
+    background: black;
+    color: rgb(124, 124, 124);
+    /* grid-row-end: -1; */
+    width: 90%;
+    height: 56px;
+    font-weight: 100;
+    display: grid;
+    font-size: 25px;
+    line-height: 0.7;
+    border-radius: 5px;
+    transition: 1s;
+
+    &:hover{
+        background-color: grey;
+        color: rgb(71, 71, 71);
+        border-radius: 10px;
+        transform: scale(1.1);
+        z-index: 100;
+    }
+}
+
+.prevNext{
+    margin-top: 80px;
+    justify-self: center;
+    gap: 10px;
+    width: 300px;
+    grid-column-end: -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.launchesContenedor{
+    display: grid;
+}
+
+
+.isActive{
+    pointer-events: all;   
+}
+
+
+.deActive{
+    pointer-events: none;  
+    opacity: 0.5; 
+}
+
+
+.bigNumber{
+    position: fixed;
+    font-size: 150vh;
+    color: rgba(231, 231, 231, 0.19);
+    right: 0;
+    top: 0;
+    line-height: 0.7;
+    z-index: -1;
 }

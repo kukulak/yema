@@ -73,6 +73,13 @@ export default function Company() {
         </a>
       </footer>
 
+
+      <style global jsx>{`
+        body {
+          background: black;
+        }
+      `}</style>
+
     </div>
     
   )

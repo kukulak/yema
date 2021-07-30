@@ -10,11 +10,15 @@ export default function CardName({ name, red }) {
         <style jsx>{`
             .black{
                 color: gray;
-                color: rgb(44, 44, 44) !important; 
+                color: rgb(21, 105, 0) !important;
             }
             
             .red{
-                color: rgb(190, 0, 0) !important;
+                padding: 12px 10px 0 0px;
+                color: rgb(160, 10, 10);
+                background-color: rgb(90, 10, 10) !important;
+                text-align: center;
+                border-radius: 4px;
             }
             `}
       </style>

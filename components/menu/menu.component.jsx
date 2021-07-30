@@ -1,11 +1,20 @@
 import styles from './menu.module.scss'
 import MenuBtns from './menuBtns.component'
+import { useRouter } from 'next/router'
+
 // import Link from "next/link"; 
 
 export default function Menu({link}) {
+
+    const router = useRouter()
+    const styleMenu = {
+        
+    }
+
+
     return (
 
-
+        
 
         <div className={styles.theHead}>
 
@@ -23,12 +32,12 @@ export default function Menu({link}) {
             </div>
 
 
-            <div className={styles.mBtn}>
+            <div style={styleMenu} className={styles.mBtn}>
                 
 
+                <MenuBtns texto="Past Launches" link={'/'}/>
                 <MenuBtns texto="Company" link={'/company'}/>
 
-                <MenuBtns texto="Past Lounches" link={'/'}/>
 
                 {/* <Link href={link}>
                 <a>
