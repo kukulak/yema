@@ -83,11 +83,7 @@ export default function InfoCompany() {
 
             <div className={styles.contenedorBigText}>
                 <BigInfo summary={ data.company.summary } />
-                    {/* <p>
-                    { data.company.ceo }  
-                    </p> */}
-
-
+                 
             </div>
         </div>
         );

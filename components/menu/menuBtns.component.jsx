@@ -34,11 +34,7 @@ export default function MenuBtns({link, texto}) {
                 { texto }
             </a>
 
-            {/* <Link href={link}>
-            <a>
-                more on wikipedia
-            </a>
-            </Link> */}
+           
         </div>
     )
   }

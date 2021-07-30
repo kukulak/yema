@@ -6,7 +6,7 @@ import Cards from '../components/cards.component'
 
 import Menu from '../components/menu/menu.component';
 
-import TheApolloClient from '../components/apolloClient.component';
+
 
 import {
   ApolloClient,
@@ -20,7 +20,7 @@ import { offsetLimitPagination } from "@apollo/client/utilities";
 
 
 
-// import { withApollo } from '../libs/apollo';
+
 
 
 export default function Home() {

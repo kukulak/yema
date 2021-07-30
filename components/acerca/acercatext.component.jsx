@@ -1,6 +1,6 @@
 import styles from './acerca.module.scss'
 
-// import Link from "next/link"; 
+
 
 export default function Text(props) {
     return (
@@ -12,7 +12,7 @@ export default function Text(props) {
                      { props.summary }
                  </p>
 
-                 {/* <span> { props.summary }</span> */}
+                
                  
         </div>
     )

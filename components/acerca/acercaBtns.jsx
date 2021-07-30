@@ -1,6 +1,6 @@
 import styles from './acerca.module.scss'
 
-import Link from "next/link"; 
+
 
 export default function Btns(props) {
     return (

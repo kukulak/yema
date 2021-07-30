@@ -32,18 +32,13 @@ export default function Menu({link}) {
             </div>
 
 
+
+
             <div style={styleMenu} className={styles.mBtn}>
                 
-
                 <MenuBtns texto="Past Launches" link={'/'}/>
                 <MenuBtns texto="Company" link={'/company'}/>
 
-
-                {/* <Link href={link}>
-                <a>
-                more on wikipedia
-                </a>
-            </Link> */}
             </div>
 
         </div>

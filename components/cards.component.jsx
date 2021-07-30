@@ -152,9 +152,6 @@ export default function Cards() {
 
                           console.log("OVER___OFFSET", offset)
                           handleOver(offset, 108, setActive)
-                          // if (offset === 24) {
-                          //     this.style.pointerEvents = 'none'
-                          // }
 
                   }}
                   onClick={() => {

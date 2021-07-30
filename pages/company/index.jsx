@@ -68,8 +68,7 @@ export default function Company() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          valderrama.dev{' '}
-          {/* <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} /> */}
+          valderrama.dev
         </a>
       </footer>
 

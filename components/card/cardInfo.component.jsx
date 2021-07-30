@@ -8,8 +8,6 @@ export default function CardInfo({link, name, red, date}) {
     return (
 
         <div className={styles.info}>
-            {/* INFO */}
-          
             <CardName name={name} red={red} />
             <CardBtn texto="more on Wikipedia" link={link}/>
         </div>

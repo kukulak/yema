@@ -15,9 +15,7 @@
     
     &:hover{
         box-shadow: 0 0 120px 0 rgba(0, 0, 0, 0.2);
-        // transform: scale(1.1);
-        // transform: scale(1.05);
-        // margin-top: -5px;
+      
 
     }
 
@@ -25,8 +23,7 @@
 
 }
 
-// div[data-tilt="true"] {
-// }
+
 
 .tilt{
     width: inherit !important;
@@ -47,7 +44,7 @@
     h1{
         margin: 0 20px;
         padding: 0;
-        // background-color: yellow; 
+       
         font-size: 20px;
         color: red;
         height: 60px;
@@ -65,7 +62,7 @@
 
     display: grid;
     width: 300px;
-    /* position: absolute; */
+  
     margin: 0 0 0 -0px;
     height: 160px;
     overflow: hidden;
@@ -87,14 +84,14 @@
     margin: -31px 0;
     width: 200px;
     a{
-        // width: 80%;
+       
         text-align: center;
         margin-top: 15px;
         display: block;
         margin: 20px 0px 10px;
         background: black;
         color: rgb(160, 160, 160);
-        // width: fit-content;
+    
         padding: 20px;
         border-radius: 6px;
         margin: 56px 0px -24px;
@@ -107,7 +104,7 @@
             box-shadow: 0 0 120px 0 rgba(0, 0, 0, 0.31);
             background-color: rgb(184, 184, 184);
             color: rgb(44, 44, 44);
-            // transform: scale(1.07);
+           
         }
     }
 }

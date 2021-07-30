@@ -2,7 +2,6 @@ import styles from './card.module.scss'
 
 export default function CardName({ name, red }) {
     return (
-        // className={`${style.basic__button ${css}`} 
         <div className={styles.name}>
           
             <h1 className={red}>

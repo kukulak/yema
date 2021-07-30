@@ -1,7 +1,7 @@
 import styles from './acerca.module.scss'
 
 import Text from './acercatext.component'
-// import Link from "next/link"; 
+
 
 export default function Acerca({ ...props }) {
     return (
