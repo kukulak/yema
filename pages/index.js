@@ -2,7 +2,9 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 // import logo from '../public/yemaLogo.svg'
 
-import Card from '../components/card/card.component'
+import Cards from '../components/cards.component'
+
+import Menu from '../components/menu/menu.component';
 
 
 import {
@@ -13,34 +15,46 @@ import {
   gql
 } from "@apollo/client";
 
+import { offsetLimitPagination } from "@apollo/client/utilities";
+
+
+// import { withApollo } from '../libs/apollo';
+
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-    <Card />
-        
-    {/* </Card> */}
 
+  const client = new ApolloClient({
+    uri: 'https://api.spacex.land/graphql/',
+    cache: new InMemoryCache({
+    typePolicies: {
+        Query: {
+        fields: {
+            feed: offsetLimitPagination() 
+            },
+        },
+        },
+    })
+  });
+
+  
+  return (
+  
+    <div className={styles.container}>
+    
 
       <Head>
-        <title>spaceX for YEMA</title>
+        <title>spaceXfor YEMA</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-        spaceX
-        
-        {/* <a href="https://nextjs.org">Next.js!</a> */}
-        </h1>
-        <p>for</p>
-          <img src= '/yemaLogo.svg' width="200"></img>
-        <p className={styles.description}>
-          Past Launches{' '}
-          {/* <code className={styles.code}>pages/index.js</code> */}
-        </p>
 
-        <div className={styles.grid}>
+      <Menu />
+
+
+   
+
+        {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -68,7 +82,11 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
+        <ApolloProvider client={client}>
+          <Cards />
+       
+        </ApolloProvider>
       </main>
 
       <footer className={styles.footer}>
@@ -81,6 +99,9 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
+
+
     </div>
+    
   )
 }

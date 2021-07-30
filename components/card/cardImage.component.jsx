@@ -1,10 +1,10 @@
 import styles from './card.module.scss'
 
-export default function CardImage() {
+export default function CardImage({image}) {
     return (
 
         <div className={styles.image}>
-            IMG
+            <img src={image} alt="" />
         </div>
     )
   }

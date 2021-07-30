@@ -1,17 +1,17 @@
-import styles from './card.module.scss'
+import styles from './menu.module.scss'
 
-// import Link from "next/link"; 
+import Link from "next/link"; 
 
-export default function CardBtn({link, texto}) {
+export default function MenuBtns({link, texto}) {
     return (
 
 
         <div className={styles.btn}>
             
 
-            <a className={styles.btn} href={link} target="_blank" rel="noopener noreferrer">
+            <Link className={styles.btnInd} href={link} target="_blank" rel="noopener noreferrer">
                 { texto }
-            </a>
+            </Link>
 
             {/* <Link href={link}>
             <a>
