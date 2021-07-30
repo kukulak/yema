@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import styles from '../../styles/Company.module.css'
-// import logo from '../public/yemaLogo.svg'
+import styles from '../../styles/company.module.css'
+
 
 import InfoCompany from '../../components/acerca.component'
 
